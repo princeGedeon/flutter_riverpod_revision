@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:riverpod_firebase_train/screens/add_todo_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -21,6 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
 
       floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext ctx){
+          return AddScreen();
+        }));
+
 
       },
       child:Icon(Icons.add),)
