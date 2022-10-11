@@ -10,6 +10,20 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(title:Text("Mon todo")),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Text('data')
+          ],
+        ),
+      ),
+
+      floatingActionButton: FloatingActionButton(onPressed: () {
+
+      },
+      child:Icon(Icons.add),)
+    );
   }
 }
